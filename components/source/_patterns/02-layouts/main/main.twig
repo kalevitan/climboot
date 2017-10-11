@@ -1,0 +1,16 @@
+<main id="main" class="main" role="main" tabindex="-1">
+  {% block main %}
+    {% include "components-hero" %}
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Featured</h2>
+          <div class="row">
+            {% include "components-card" %}
+            {% include "components-card" %}
+            {% include "components-card" %}
+            {% include "components-card" %}
+          </div>
+      </div>
+    </section>
+  {% endblock %}
+</main>

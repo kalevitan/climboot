@@ -1,0 +1,6 @@
+hero_title: "Once, I made something"
+hero_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor id orci eu scelerisque. Pellentesque vestibulum condimentum augue, quis porttitor sem posuere ut."
+has_button: true
+button_modifier: "primary"
+button_url: "#"
+button_label: "Learn More"

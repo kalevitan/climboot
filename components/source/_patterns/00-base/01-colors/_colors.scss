@@ -1,0 +1,47 @@
+.color-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+   li {
+    display: block;
+    margin: 1%;
+    width: 14.666667%;
+  }
+}
+.color-set {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  li {
+    margin-top: 1.2em;
+    width: 100%;
+  }
+}
+.swatch {
+  color: white;
+  display: block;
+  font-size: 32px;
+  height: 2.5em;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+  .swatch:hover .meta-data {
+    opacity: 1;
+    right: 0; }
+  .swatch .meta-data {
+    bottom: 0;
+    display: block;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: -100%;
+    top: .55em;
+    transition: 0.2s all; }
+  .swatch .variable,
+  .swatch .hex {
+    display: block;
+    font-size: 11px; }

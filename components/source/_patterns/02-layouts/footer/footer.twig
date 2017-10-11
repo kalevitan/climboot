@@ -1,0 +1,18 @@
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="footer__top col-xs-12">
+        {% block top %}
+          {% include "components-site-name" %}
+        {% endblock %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="footer__bottom col-xs-12">
+        {% block bottom %}
+          {% include "components-nav-footer" %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+</footer>

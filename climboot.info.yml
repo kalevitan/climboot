@@ -1,0 +1,35 @@
+name: Climate Bootstrap
+type: theme
+description: "A Bootstrap based theme for Climate"
+core: 8.x
+base theme: false
+libraries:
+  - climboot/global
+
+regions:
+  page_top: 'Page Top'
+  header: Header
+  breadcrumb: Breadcrumb
+  help: Help
+  highlighted: Highlighted
+  content: Content
+  footer: Footer
+  disabled: Disabled
+  page_bottom: 'Page Bottom'
+
+component-libraries:
+  base:
+    paths:
+      - components/source/_patterns/00-base
+  components:
+    paths:
+      - components/source/_patterns/01-components
+  layouts:
+    paths:
+      - components/source/_patterns/02-layouts
+  templates:
+    paths:
+      - components/source/_patterns/03-templates
+  pages:
+    paths:
+      - components/source/_patterns/05-pages

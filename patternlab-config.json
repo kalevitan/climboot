@@ -1,0 +1,69 @@
+{
+  "paths" : {
+    "root": "./components",
+    "source" : {
+      "root": "./components/source/",
+      "patterns" : "./components/source/_patterns/",
+      "data" : "./components/source/_data/",
+      "meta": "./components/source/_meta/",
+      "annotations" : "./components/source/_annotations/",
+      "styleguide" : "./node_modules/styleguidekit-assets-default/dist/",
+      "patternlabFiles" : "./node_modules/styleguidekit-mustache-default/views/",
+      "js" : "./components/source/js",
+      "images" : "./components/source/images",
+      "fonts" : "./components/source/fonts",
+      "css" : "./components/source/css/"
+    },
+    "public" : {
+      "root" : "./components/public/",
+      "patterns" : "./components/public/patterns/",
+      "data" : "./components/public/styleguide/data/",
+      "annotations" : "./components/public/annotations/",
+      "styleguide" : "./components/public/styleguide/",
+      "js" : "./components/public/js",
+      "images" : "./components/public/images",
+      "fonts" : "./components/public/fonts",
+      "css" : "./components/public/css"
+    }
+  },
+  "styleGuideExcludes": [
+    "templates",
+    "pages"
+  ],
+  "defaultPattern": "all",
+  "cleanPublic" : true,
+  "patternExtension": "mustache",
+  "ignored-extensions" : ["scss", "DS_Store", "less"],
+  "ignored-directories" : ["scss"],
+  "debug": false,
+  "ishControlsHide": {
+    "s": false,
+    "m": false,
+    "l": false,
+    "full": false,
+    "random": false,
+    "disco": false,
+    "hay": true,
+    "mqs": false,
+    "find": false,
+    "views-all": false,
+    "views-annotations": false,
+    "views-code": false,
+    "views-new": false,
+    "tools-all": false,
+    "tools-docs": false
+  },
+  "ishMinimum": "240",
+  "ishMaximum": "2600",
+  "patternStateCascade": ["inprogress", "inreview", "complete"],
+  "patternExportPatternPartials": [],
+  "patternExportDirectory": "./components/pattern_exports/",
+  "baseurl" : "",
+  "cacheBust": true,
+  "starterkitSubDir": "dist",
+  "outputFileSuffixes": {
+    "rendered": "",
+    "rawTemplate": "",
+    "markupOnly": ".markup-only"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "edition-php-grunt",
+  "description": "The grunt wrapper around patternlab-php core, providing tasks to interact with the core library and move supporting frontend assets.",
+  "version": "1.1.0",
+  "dependencies": {
+    "bs-html-injector": "^3.0.0",
+    "grunt": "~1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "grunt-sass-globbing": "^1.5.1",
+    "grunt-shell": "^2.1.0",
+    "load-grunt-tasks": "^3.5.2",
+    "minimist": "^1.2.0"
+  },
+  "keywords": [
+    "Pattern Lab",
+    "Atomic Web Design",
+    "PHP",
+    "Grunt",
+    "Javascript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7"
+  },
+  "scripts": {
+    "start": "composer install && npm install && grunt"
+  }
+}

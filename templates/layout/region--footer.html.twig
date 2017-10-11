@@ -1,0 +1,15 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ */
+#}
+{% extends "@layouts/footer/footer.twig" %}
+
+{% block top %}
+  {{ drupal_block('climboot_branding') }}
+{% endblock %}
+
+{% block bottom %}
+  {{ drupal_block('climboot_footer') }}
+{% endblock %}

@@ -1,0 +1,19 @@
+# Small devices (landscape phones, 576px and up)
+climboot.small:
+  label: small
+  mediaQuery: '(min-width: 576px)'
+
+# Medium devices (tablets, 768px and up)
+climboot.medium:
+  label: medium
+  mediaQuery: '(min-width: 768px)'
+
+# Large devices (desktops, 992px and up)
+climboot.large:
+  label: large
+  mediaQuery: '(min-width: 992px)'
+
+# Extra large devices (large desktops, 1200px and up)
+climboot.xlarge:
+  label: xlarge
+  mediaQuery: '(min-width: 1200px)'

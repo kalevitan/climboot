@@ -1,0 +1,21 @@
+<div class="hero">
+  <div class="container">
+    <div class="hero__content jumbotron">
+      <h1 class="hero__title">{{ hero_title }}</h1>
+      <p class="hero__text">{{ hero_text|raw }}</p>
+      {% if has_button %}
+        <div class="hero__call-to-action">
+          {% block button %}
+            {% include "@components/button/button.twig"
+              with {
+                button_modifier: button_modifier,
+                button_label: button_label,
+                button_url: button_url
+              }
+            %}
+          {% endblock %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

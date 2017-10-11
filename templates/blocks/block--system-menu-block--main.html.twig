@@ -1,0 +1,10 @@
+{% extends '@components/nav-main/nav-main.twig' %}
+
+{% block content %}
+  {{ content }}
+{% endblock %}
+
+{% block site_branding %}
+  {# Load my branding block -thanks, Twig Tweak! #}
+  {{ drupal_block('climboot_branding') }}
+{% endblock %}
