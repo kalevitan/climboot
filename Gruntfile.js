@@ -14,11 +14,9 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Project scripts and libraries
-  const jsLibs = [
-    './node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'
-  ];
-  const jsApp = [
-    './components/source/js/app/*.js'
+  var jsLibs = [
+    './node_modules/popper.js/dist/umd/popper.js', // req by bootstrap
+    './node_modules/bootstrap/dist/js/bootstrap.js'
   ];
 
   /******************************************************
@@ -80,8 +78,8 @@ module.exports = function (grunt) {
           sourceMap: true
         },
         files: {
-          'components/source/js/libs.min.js' : jsLibs,
-          'components/source/js/app.min.js': [jsApp, 'components/source/_patterns/**/*.js'],
+          'components/source/js/libs/libs.min.js' : jsLibs,
+          'components/source/js/app/app.min.js': 'components/source/_patterns/**/*.js'
         }
       }
     },
@@ -91,10 +89,11 @@ module.exports = function (grunt) {
     copy: {
       main: {
         files: [
-          { expand: true, cwd: path.resolve(paths().source.js), src: '**/*.js', dest: path.resolve(paths().public.js) },
-          { expand: true, cwd: path.resolve(paths().source.js), src: '**/*.js.map', dest: path.resolve(paths().public.js) },
-          { expand: true, cwd: path.resolve(paths().source.css), src: '**/*.css', dest: path.resolve(paths().public.css) },
-          { expand: true, cwd: path.resolve(paths().source.css), src: '**/*.css.map', dest: path.resolve(paths().public.css) },
+          // We are compiling our assets and including them in the header, so no need to copy them.
+          // { expand: true, cwd: path.resolve(paths().source.js), src: '**/*.js', dest: path.resolve(paths().public.js) },
+          // { expand: true, cwd: path.resolve(paths().source.js), src: '**/*.js.map', dest: path.resolve(paths().public.js) },
+          // { expand: true, cwd: path.resolve(paths().source.css), src: '**/*.css', dest: path.resolve(paths().public.css) },
+          // { expand: true, cwd: path.resolve(paths().source.css), src: '**/*.css.map', dest: path.resolve(paths().public.css) },
           { expand: true, cwd: path.resolve(paths().source.images), src: '**/*', dest: path.resolve(paths().public.images) },
           { expand: true, cwd: path.resolve(paths().source.fonts), src: '**/*', dest: path.resolve(paths().public.fonts) },
           { expand: true, cwd: path.resolve(paths().source.root), src: 'favicon.ico', dest: path.resolve(paths().public.root) },

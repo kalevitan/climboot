@@ -29,7 +29,7 @@ ishViewportRange:
         - 800
     l:
         - 800
-        - 1200
+        - 1400
 ishMinimum: '240'
 ishMaximum: '2600'
 ishControlsHide:
@@ -39,7 +39,7 @@ styleguideKitPath: vendor/pattern-lab/styleguidekit-twig-default
 lineageMatch: '{%([ ]+)?(?:include|extends|embed)( |\()[&quot;\&#039;]([\/.@A-Za-z0-9-_]+)[&quot;\&#039;]([\s\S+]*?)%}'
 lineageMatchKey: 3
 patternExtension: twig
-twigDebug: false
+twigDebug: true
 twigAutoescape: html
 twigDefaultDateFormat: ''
 twigDefaultIntervalFormat: ''

@@ -6,9 +6,9 @@
   {% if items %}
     {% spaceless %}
       {% if menu_level == 0 %}
-        <ul class="navbar-nav">
+        <ul class="nav flex-column">
       {% else %}
-        <ul class="navbar-nav dropdown">
+        <ul class="nav dropdown">
       {% endif %}
       {% for item in items %}
         {%

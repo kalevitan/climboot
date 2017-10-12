@@ -5,5 +5,7 @@ global:
   js:
     components/source/js/libs.min.js: {}
     components/source/js/app.min.js: {}
-    dependencies:
-      - core/jquery
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
