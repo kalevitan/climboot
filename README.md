@@ -3,6 +3,12 @@
 
 This is simple Drupal 8 theme with [Pattern Lab](http://patternlab.io) conveniently integrated. The theme relies on Bootstrap 4 as the underlining front-end framework. Composer is used to manage the PHP edition of Pattern Lab. Node is used for the theme's asset compiling, as well as managing pattern generation.
 
+#### Build Prereqs
+- PHP 5.4+
+- [Composer](https://getcomposer.org/doc/00-intro.md)
+- [npm](http://blog.npmjs.org/post/85484771375/how-to-install-npm)
+- [Grunt](http://gruntjs.com/getting-started)
+
 **Following commands should be ran from the theme's directory**
 
 ### Quick-start Guide :rocket:
