@@ -1,7 +1,7 @@
 # Climboot
 ## *Drupal 8 Theme w/ Pattern Lab*
 
-This is simple Drupal 8 theme with [Pattern Lab](http://patternlab.io) conveniently integrated. The theme relies on Bootstrap 4 as the underlining front-end framework. Composer is used to manage the PHP edition of Pattern Lab. Node is used for the theme's asset compiling, as well as managing pattern generation.
+This is simple Drupal 8 theme with [Pattern Lab](http://patternlab.io) conveniently integrated. The theme relies on Bootstrap 4 as the underlining front-end framework (Requires jQuery 3). Composer is used to manage the PHP edition of Pattern Lab. Node is used for the theme's asset compiling, as well as managing pattern generation.
 
 #### Build Prereqs
 - PHP 5.4+
