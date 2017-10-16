@@ -1,6 +1,6 @@
 {
-  "name": "Pattern Lab Demo - A Drupal 8 Theme",
-  "description": "The grunt wrapper around patternlab-php core, providing tasks to interact with the core library and move supporting frontend assets.",
+  "name": "climboot",
+  "description": "Pattern Lab Demo - A Drupal 8 Theme with a grunt wrapper around patternlab-php core, providing tasks to interact with the core library and move supporting frontend assets.",
   "version": "1.0.0",
   "author": "Kyle Levitan",
   "devDependencies": {
@@ -33,6 +33,6 @@
     "popper.js": "^1.12.5"
   },
   "scripts": {
-    "start": "composer install && npm install && grunt pl:serve"
+    "start": "composer install -d components && npm install && grunt pl:serve"
   }
 }
