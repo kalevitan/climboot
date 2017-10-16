@@ -29,7 +29,7 @@ ishViewportRange:
         - 800
     l:
         - 800
-        - 1400
+        - 1300
 ishMinimum: '240'
 ishMaximum: '2600'
 ishControlsHide:
