@@ -1,7 +1,0 @@
-hero_title: "My Pattern Lab Heading"
-hero_text: |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor sem quis ex bibendum, at gravida sapien porta. Etiam ullamcorper quam sed tellus rhoncus gravida. Vivamus ullamcorper massa at nisi interdum, vel placerat justo malesuada. Donec vitae tortor mollis, convallis risus ut, laoreet diam.
-has_button: true
-button_modifier: "primary"
-button_url: "#"
-button_label: "Learn More"
