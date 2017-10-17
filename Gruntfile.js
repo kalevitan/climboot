@@ -84,26 +84,6 @@ module.exports = function (grunt) {
       }
     },
     /******************************************************
-     * COPY TASKS
-    ******************************************************/
-    copy: {
-      main: {
-        files: [
-          // We are compiling our assets and including them in the header, so no need to copy them.
-          // { expand: true, cwd: path.resolve(paths().source.js), src: '**/*.js', dest: path.resolve(paths().public.js) },
-          // { expand: true, cwd: path.resolve(paths().source.js), src: '**/*.js.map', dest: path.resolve(paths().public.js) },
-          // { expand: true, cwd: path.resolve(paths().source.css), src: '**/*.css', dest: path.resolve(paths().public.css) },
-          // { expand: true, cwd: path.resolve(paths().source.css), src: '**/*.css.map', dest: path.resolve(paths().public.css) },
-          { expand: true, cwd: path.resolve(paths().source.images), src: '**/*', dest: path.resolve(paths().public.images) },
-          { expand: true, cwd: path.resolve(paths().source.fonts), src: '**/*', dest: path.resolve(paths().public.fonts) },
-          { expand: true, cwd: path.resolve(paths().source.root), src: 'favicon.ico', dest: path.resolve(paths().public.root) },
-          { expand: true, cwd: path.resolve(paths().source.styleguide), src: ['*', '**'], dest: path.resolve(paths().public.root) },
-          // slightly inefficient to do this again - I am not a grunt glob master. someone fix
-          { expand: true, flatten: true, cwd: path.resolve(paths().source.styleguide, 'styleguide', 'css', 'custom'), src: '*.css)', dest: path.resolve(paths().public.styleguide, 'css') }
-        ]
-      }
-    },
-    /******************************************************
      * SERVER AND WATCH TASKS
     ******************************************************/
     watch: {
@@ -164,7 +144,7 @@ module.exports = function (grunt) {
       }
     },
     bsReload: {
-      css: path.resolve(paths().public.root + '**/*.css')
+      css: path.resolve(paths().public.css + '/*.css')
     }
   });
 
@@ -173,8 +153,8 @@ module.exports = function (grunt) {
   ******************************************************/
 
   grunt.registerTask('compile', ['sass_globbing:dev', 'sass:dist', 'uglify:dist']);
-  grunt.registerTask('default', ['shell:patternlab', 'compile','copy:main']);
-  grunt.registerTask('pl:watch', ['shell:patternlab', 'compile','copy:main', 'watch:all']);
-  grunt.registerTask('pl:serve', ['shell:patternlab', 'compile', 'copy:main', 'browserSync', 'watch:all']);
+  grunt.registerTask('default', ['compile', 'shell:patternlab']);
+  grunt.registerTask('pl:watch', ['compile', 'shell:patternlab', 'watch:all']);
+  grunt.registerTask('pl:serve', ['compile', 'shell:patternlab', 'browserSync', 'watch:all']);
 
 };
